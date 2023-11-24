@@ -64,7 +64,7 @@
 		"precio": 665
 	},
 	{
-		"imagen": "../../../public/Almacen/Vinagre_Menoyo_Alcohol_500.png",
+		"imagen": "https://i.ibb.co/b3jt8Ng/Vinagre-Menoyo-Alcohol-500.png",
 		"nombre": "Vinagre",
 		"marca": "Menoyo",
 		"tipo": "Alcohol",
@@ -106,7 +106,7 @@
 		"imagen": "https://i.ibb.co/GJCwg7Y/Hellmanns-475.png",
 		"nombre": "Mayonesa",
 		"marca": "Hellmann's",
-		"capacidad": "950 Grs",
+		"capacidad": "475 Grs",
 		"precio": 938
 	},
 	{

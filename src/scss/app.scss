@@ -15,10 +15,12 @@ html {
   }
 
   .body {
-    background-color: burlywood;
-
     .card {
       box-shadow: 3px 3px 5px green;
+
+      img {
+        width: 200px;
+      }
 
       .card-footer-item {
         margin: 0;

@@ -2,60 +2,27 @@ import CartWidget from "../CartWidget/cartWidget";
 
 const navbar = () => {
 	return (
-		<section className="section navbar">
-			<nav className="container">
-				<div className="columns">
-					<div className="column logo is-4">
-						<h1 className="title is-3">SuperCercaTuyo</h1>
-					</div>
-					<div className="column is-8 bg-warning">
-						<div className="columns">
-							{/* Columna superior Info */}
-							<div className="column is-8 bg-info">
-								<h3 className="subtitle is-4 h-100 p-1 has-text-centered ">
-									Sucursal Córdoba
-								</h3>
-							</div>
-							<div className="column is-4 bg-success">
-								<CartWidget />
-							</div>
-						</div>
-						<div className="columns is-flex-wrap-wrap">
-							<div className="column is-4 is-flex">
-								<button className="button is-primary m-auto is-size-7-touch">
-									Verduleria
-								</button>
-							</div>
-							<div className="column is-4 is-flex">
-								<button className="button is-primary m-auto is-size-7-touch">
-									Almacen
-								</button>
-							</div>
-							<div className="column is-4 is-flex">
-								<button className="button is-primary m-auto  is-size-7-touch">
-									Bebidas
-								</button>
-							</div>
-							<div className="column is-4 is-flex">
-								<button className="button is-primary m-auto is-size-7-touch">
-									Carniceria
-								</button>
-							</div>
-							<div className="column is-4 is-flex">
-								<button className="button is-primary m-auto is-size-7-touch">
-									Limpieza
-								</button>
-							</div>
-							<div className="column is-4 is-flex">
-								<button className="button is-primary m-auto is-size-7-touch">
-									Electrodomesticos
-								</button>
-							</div>
-						</div>
-					</div>
+		<div className="container is-flex p-3">
+			<div className="w-25 is-flex">
+				<h1 className="m-auto title is-3">SuperCercaTuyo</h1>
+			</div>
+			<div className="w-75">
+				<div className="is-flex is-justify-content-space-around is-align-conent-center h-50">
+					<h3 className="subtitle is-4 h-100 p-1">Sucursal Córdoba</h3>
+					<CartWidget />
 				</div>
-			</nav>
-		</section>
+				<div className="h-50">
+					<ul className="buttons d-flex justify-content-evenly align-items-center h-100">
+						<button className="button is-primary">Verduleria</button>
+						<button className="button is-primary">Almacen</button>
+						<button className="button is-primary">Bebidas</button>
+						<button className="button is-primary">Carniceria</button>
+						<button className="button is-primary">Limpieza</button>
+						<button className="button is-primary">Electrodomesticos</button>
+					</ul>
+				</div>
+			</div>
+		</div>
 	);
 };
 
