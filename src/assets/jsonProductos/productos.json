@@ -1,6 +1,6 @@
 [
 	{
-		"imagen": "../../../public/Almacen/Aceite_Pureza_900.png",
+		"imagen": "https://i.ibb.co/sJxYhJT/Aceite-Pureza-900.png",
 		"nombre": "Aceite",
 		"marca": "Pureza",
 		"tipo": "Girasol",
@@ -8,7 +8,7 @@
 		"precio": 853
 	},
 	{
-		"imagen": "../../../public/Almacen/Aceite_Lira_900.png",
+		"imagen": "https://i.ibb.co/k62Yk7C/Aceite-Lira-900.png",
 		"nombre": "Aceite",
 		"marca": "Lira",
 		"tipo": "Girasol",
@@ -16,7 +16,7 @@
 		"precio": 818
 	},
 	{
-		"imagen": "../../../public/Almacen/Aceite_Cocinero_900.png",
+		"imagen": "https://i.ibb.co/6B5cp0f/Aceite-Cocinero-900.png",
 		"nombre": "Aceite",
 		"marca": "Cocinero",
 		"tipo": "Girasol",
@@ -24,7 +24,7 @@
 		"precio": 895
 	},
 	{
-		"imagen": "../../../public/Almacen/Aceite_Legitimo_900.png",
+		"imagen": "https://i.ibb.co/1f4Cnsm/Aceite-Legitimo-900.png",
 		"nombre": "Aceite",
 		"marca": "Legitimo",
 		"tipo": "Girasol",
@@ -32,7 +32,7 @@
 		"precio": 416
 	},
 	{
-		"imagen": "../../../public/Almacen/Aceite_Pureza_1500.png",
+		"imagen": "https://i.ibb.co/0Mw63P4/Aceite-Pureza-litro-medio.png",
 		"nombre": "Aceite",
 		"marca": "Pureza",
 		"tipo": "Girasol",
@@ -40,7 +40,7 @@
 		"precio": 853
 	},
 	{
-		"imagen": "../../../public/Almacen/Aceite_Lira_1500.png",
+		"imagen": "https://i.ibb.co/wztm591/Aceite-Lira-1500.png",
 		"nombre": "Aceite",
 		"marca": "Lira",
 		"tipo": "Girasol",
@@ -48,7 +48,7 @@
 		"precio": 1380
 	},
 	{
-		"imagen": "../../../public/Almacen/Aceite_Cocinero_1500.png",
+		"imagen": "https://i.ibb.co/XzGgMKH/Aceite-Cocinero-1500.png",
 		"nombre": "Aceite",
 		"marca": "Cocinero",
 		"tipo": "Girasol",
@@ -56,7 +56,7 @@
 		"precio": 1440
 	},
 	{
-		"imagen": "../../../public/Almacen/Aceite_Legitimo_1500.png",
+		"imagen": "https://i.ibb.co/ggqnhgW/Aceite-Legitimo-1500.png",
 		"nombre": "Aceite",
 		"marca": "Legitimo",
 		"tipo": "Girasol",

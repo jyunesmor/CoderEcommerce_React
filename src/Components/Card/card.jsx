@@ -8,7 +8,7 @@ const Card = ({ producto }) => {
 				<div className="card">
 					<div className="card-image p-3">
 						<figure className="image">
-							<img src={producto.imagen} alt="Aceite_Pureza_1000" />
+							<img src={producto.imagen} alt={producto.nombre} />
 						</figure>
 					</div>
 					<div className="card-content p-2 mt-2 has-text-centered">
