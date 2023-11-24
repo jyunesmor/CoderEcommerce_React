@@ -1,0 +1,161 @@
+[
+	{
+		"imagen": "../../../public/Almacen/Aceite_Pureza_900.png",
+		"nombre": "Aceite",
+		"marca": "Pureza",
+		"tipo": "Girasol",
+		"capacidad": "900 Ml",
+		"precio": 853
+	},
+	{
+		"imagen": "../../../public/Almacen/Aceite_Lira_900.png",
+		"nombre": "Aceite",
+		"marca": "Lira",
+		"tipo": "Girasol",
+		"capacidad": "900 Ml",
+		"precio": 818
+	},
+	{
+		"imagen": "../../../public/Almacen/Aceite_Cocinero_900.png",
+		"nombre": "Aceite",
+		"marca": "Cocinero",
+		"tipo": "Girasol",
+		"capacidad": "900 Ml",
+		"precio": 895
+	},
+	{
+		"imagen": "../../../public/Almacen/Aceite_Legitimo_900.png",
+		"nombre": "Aceite",
+		"marca": "Legitimo",
+		"tipo": "Girasol",
+		"capacidad": "900 Ml",
+		"precio": 416
+	},
+	{
+		"imagen": "../../../public/Almacen/Aceite_Pureza_1500.png",
+		"nombre": "Aceite",
+		"marca": "Pureza",
+		"tipo": "Girasol",
+		"capacidad": "1500 Ml",
+		"precio": 853
+	},
+	{
+		"imagen": "../../../public/Almacen/Aceite_Lira_1500.png",
+		"nombre": "Aceite",
+		"marca": "Lira",
+		"tipo": "Girasol",
+		"capacidad": "1500 Ml",
+		"precio": 1380
+	},
+	{
+		"imagen": "../../../public/Almacen/Aceite_Cocinero_1500.png",
+		"nombre": "Aceite",
+		"marca": "Cocinero",
+		"tipo": "Girasol",
+		"capacidad": "1500 Ml",
+		"precio": 1440
+	},
+	{
+		"imagen": "../../../public/Almacen/Aceite_Legitimo_1500.png",
+		"nombre": "Aceite",
+		"marca": "Legitimo",
+		"tipo": "Girasol",
+		"capacidad": "1500 Ml",
+		"precio": 665
+	},
+	{
+		"imagen": "../../../public/Almacen/Vinagre_Menoyo_Alcohol_500.png",
+		"nombre": "Vinagre",
+		"marca": "Menoyo",
+		"tipo": "Alcohol",
+		"capacidad": "500 Ml",
+		"precio": 236.16
+	},
+	{
+		"imagen": "../../../public/Almacen/Vinagre_Menoyo_Vino_500.png",
+		"nombre": "Vinagre",
+		"marca": "Menoyo",
+		"tipo": "Vino",
+		"capacidad": "500 Ml",
+		"precio": 399
+	},
+	{
+		"imagen": "../../../public/Almacen/Vinagre_Casalta_Alcohol_1300.png",
+		"nombre": "Vinagre",
+		"marca": "Casalta",
+		"tipo": "Alcohol",
+		"capacidad": "1300 Ml",
+		"precio": 543
+	},
+	{
+		"imagen": "../../../public/Almacen/Vinagre_Carrefour_250.png",
+		"nombre": "Vinagre",
+		"marca": "Carrefour",
+		"tipo": "Alcohol",
+		"capacidad": "250 Ml",
+		"precio": 138
+	},
+	{
+		"imagen": "../../../public/Almacen/NaturaMayonesa_500.png",
+		"nombre": "Mayonesa",
+		"marca": "Natura",
+		"capacidad": "500 Grs",
+		"precio": 447
+	},
+	{
+		"imagen": "../../../public/Almacen/Hellmanns_475.png",
+		"nombre": "Mayonesa",
+		"marca": "Hellmann's",
+		"capacidad": "950 Grs",
+		"precio": 938
+	},
+	{
+		"imagen": "../../../public/Almacen/NaturaMayonesa_500.png",
+		"nombre": "Mayonesa",
+		"marca": "Natura",
+		"capacidad": "500 Grs",
+		"precio": 583
+	},
+	{
+		"imagen": "../../../public/Almacen/Hellmanns_475.png",
+		"nombre": "Mayonesa",
+		"marca": "Hellmann's",
+		"capacidad": "475 Grs",
+		"precio": 504
+	},
+	{
+		"imagen": "../../../public/Almacen/NaturaMostaza_500.png",
+		"nombre": "Mostaza",
+		"marca": "Natura",
+		"capacidad": "500 Grs",
+		"precio": 451
+	},
+	{
+		"imagen": "../../../public/Almacen/NaturaMostaza_250.png",
+		"nombre": "Mostaza",
+		"marca": "Natura",
+		"capacidad": "250 Grs",
+		"precio": 238.5
+	},
+	{
+		"imagen": "../../../public/Almacen/NaturaMostaza_500.png",
+		"nombre": "Mostaza",
+		"marca": "Natura",
+		"capacidad": "220 Grs",
+		"precio": 271.5
+	},
+	{
+		"imagen": "../../../public/Almacen/Hellmannsketchup_250.png",
+		"nombre": "Ketchup",
+		"marca": "Hellmann's",
+		"capacidad": "250 Grs",
+		"precio": 403
+	},
+	{
+		"imagen": "../../../public/Almacen/NaturaKetchup_250.png",
+		"nombre": "Ketchup",
+		"marca": "Natura",
+		"capacidad": "250 Grs",
+		"precio": 246.5
+	}
+]

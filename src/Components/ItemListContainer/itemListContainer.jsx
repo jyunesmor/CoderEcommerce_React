@@ -1,8 +1,15 @@
-const itemListContainer = ({ title }) => {
+import Card from "../Card/card";
+import DataProductos from "../../assets/jsonProductos/productos.json";
+
+const itemListContainer = () => {
+	const product = DataProductos.map((producto) => {
+		return <Card key={producto.id} producto={producto} />;
+	});
+
 	return (
-		<div className="hero is-primary has-text-centered is-medium">
-			<div className="hero-body">
-				<h2>{title}</h2>
+		<div className="section body">
+			<div className="container is-flex is-flex-wrap-wrap is-justify-content-space-evenly">
+				{product}
 			</div>
 		</div>
 	);

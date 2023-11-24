@@ -1,17 +1,46 @@
 html {
   width: 100vw;
   height: 100vh;
-  background-color: burlywood;
 
+  .navbar {
+    background-color: blueviolet;
 
-  body {
-
-    .body {
-      min-height: calc(100vh - 200px);
-
+    .logo {
+      background-color: brown;
     }
 
+    .button {
+      width: 85%;
+    }
   }
 
+  .body {
+    background-color: burlywood;
 
+    .card {
+      box-shadow: 3px 3px 5px green;
+
+      .card-footer-item {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .itemCount {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+          margin-bottom: 1rem;
+        }
+
+        .button {
+          width: 85%;
+          box-shadow: 1px 1px 5px black;
+        }
+      }
+    }
+  }
 }
