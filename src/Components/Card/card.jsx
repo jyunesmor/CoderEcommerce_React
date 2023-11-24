@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import { Link } from "react-router-dom";
 
 const Card = ({ producto }) => {
 	return (
@@ -20,10 +19,7 @@ const Card = ({ producto }) => {
 					</div>
 					<div className="card-footer">
 						<div className="card-footer-item">
-							<div className="button is-primary">
-								Detalle
-								{/* 								<Link to="">Detalle</Link> */}
-							</div>
+							<div className="button is-primary">Detalle</div>
 						</div>
 					</div>
 				</div>

@@ -72,7 +72,7 @@
 		"precio": 236.16
 	},
 	{
-		"imagen": "../../../public/Almacen/Vinagre_Menoyo_Vino_500.png",
+		"imagen": "https://i.ibb.co/b3jt8Ng/Vinagre-Menoyo-Alcohol-500.png",
 		"nombre": "Vinagre",
 		"marca": "Menoyo",
 		"tipo": "Vino",
@@ -80,7 +80,7 @@
 		"precio": 399
 	},
 	{
-		"imagen": "../../../public/Almacen/Vinagre_Casalta_Alcohol_1300.png",
+		"imagen": "https://i.ibb.co/rkzVPTB/Vinagre-Casalta-Alcohol-1300.png",
 		"nombre": "Vinagre",
 		"marca": "Casalta",
 		"tipo": "Alcohol",
@@ -88,7 +88,7 @@
 		"precio": 543
 	},
 	{
-		"imagen": "../../../public/Almacen/Vinagre_Carrefour_250.png",
+		"imagen": "https://i.ibb.co/dbm2LT2/Vinagre-Carrefour-250.png",
 		"nombre": "Vinagre",
 		"marca": "Carrefour",
 		"tipo": "Alcohol",
@@ -96,63 +96,49 @@
 		"precio": 138
 	},
 	{
-		"imagen": "../../../public/Almacen/NaturaMayonesa_500.png",
+		"imagen": "https://i.ibb.co/GPBzrpR/Natura-Mayonesa-500.png",
 		"nombre": "Mayonesa",
 		"marca": "Natura",
 		"capacidad": "500 Grs",
 		"precio": 447
 	},
 	{
-		"imagen": "../../../public/Almacen/Hellmanns_475.png",
+		"imagen": "https://i.ibb.co/GJCwg7Y/Hellmanns-475.png",
 		"nombre": "Mayonesa",
 		"marca": "Hellmann's",
 		"capacidad": "950 Grs",
 		"precio": 938
 	},
 	{
-		"imagen": "../../../public/Almacen/NaturaMayonesa_500.png",
-		"nombre": "Mayonesa",
-		"marca": "Natura",
-		"capacidad": "500 Grs",
-		"precio": 583
-	},
-	{
-		"imagen": "../../../public/Almacen/Hellmanns_475.png",
-		"nombre": "Mayonesa",
-		"marca": "Hellmann's",
-		"capacidad": "475 Grs",
-		"precio": 504
-	},
-	{
-		"imagen": "../../../public/Almacen/NaturaMostaza_500.png",
+		"imagen": "https://i.ibb.co/djTTjBZ/Natura-Mostaza-500.png",
 		"nombre": "Mostaza",
 		"marca": "Natura",
 		"capacidad": "500 Grs",
 		"precio": 451
 	},
 	{
-		"imagen": "../../../public/Almacen/NaturaMostaza_250.png",
+		"imagen": "https://i.ibb.co/BKYNNrt/Natura-Mostaza-250.png",
 		"nombre": "Mostaza",
 		"marca": "Natura",
 		"capacidad": "250 Grs",
 		"precio": 238.5
 	},
 	{
-		"imagen": "../../../public/Almacen/NaturaMostaza_500.png",
+		"imagen": "https://i.ibb.co/sCnLvhL/Mostaza-de-Fiesta-220.png",
 		"nombre": "Mostaza",
-		"marca": "Natura",
+		"marca": "D'Fiesta",
 		"capacidad": "220 Grs",
 		"precio": 271.5
 	},
 	{
-		"imagen": "../../../public/Almacen/Hellmannsketchup_250.png",
+		"imagen": "https://i.ibb.co/RzVXtDR/Hellmannsketchup-250.png",
 		"nombre": "Ketchup",
 		"marca": "Hellmann's",
 		"capacidad": "250 Grs",
 		"precio": 403
 	},
 	{
-		"imagen": "../../../public/Almacen/NaturaKetchup_250.png",
+		"imagen": "https://i.ibb.co/nb5Jgt9/Natura-Ketchup-250.png",
 		"nombre": "Ketchup",
 		"marca": "Natura",
 		"capacidad": "250 Grs",
