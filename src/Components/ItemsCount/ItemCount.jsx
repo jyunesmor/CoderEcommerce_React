@@ -30,7 +30,7 @@ const ItemCount = () => {
 						<FaPlus />
 					</div>
 				</div>
-				<div className="button has-background-success is-size-6">
+				<div className="button btn-carrito has-background-success is-size-6">
 					Agregar a Carrito
 				</div>
 			</div>

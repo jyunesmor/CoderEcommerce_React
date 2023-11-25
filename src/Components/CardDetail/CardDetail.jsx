@@ -28,13 +28,19 @@ const CardDetail = () => {
 									</div>
 									<div className="content-card">
 										<div className="card-content p-2 mt-2 has-text-centered">
-											<div className="card-tilte is-size-6">
+											<div className="card-tilte is-size-5">
 												{producto.nombre}
+											</div>
+											<div className="card-tilte is-size-4">
+												{producto.marca}
+											</div>
+											<div className="card-subtitle is-size-6 my-2">
+												{producto.tipo}
 											</div>
 											<div className="card-subtitle is-size-7">
 												{producto.capacidad}
 											</div>
-											<div className="card-subtitle is-size-5 has-text-weight-semibold pt-2">
+											<div className="card-subtitle is-size-4 has-text-weight-semibold pt-2 mt-2">
 												$ {producto.precio.toFixed(2)}
 											</div>
 										</div>
@@ -48,8 +54,10 @@ const CardDetail = () => {
 							</div>
 						</div>
 					</div>
-					<div className="button is-primary">
-						<Link to="/productos">Volver</Link>
+					<div className="button btn-volver has-background-success">
+						<Link className="link" to="/productos">
+							Volver
+						</Link>
 					</div>
 				</div>
 			</div>

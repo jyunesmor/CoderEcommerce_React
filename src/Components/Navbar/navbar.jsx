@@ -1,25 +1,42 @@
+import "./navbar.scss";
 import CartWidget from "../CartWidget/cartWidget";
+import { Link } from "react-router-dom";
 
 const navbar = () => {
 	return (
-		<div className="container is-flex p-3">
-			<div className="w-25 is-flex">
-				<h1 className="m-auto title is-3">SuperCercaTuyo</h1>
-			</div>
-			<div className="w-75">
-				<div className="is-flex is-justify-content-space-around is-align-conent-center h-50">
-					<h3 className="subtitle is-4 h-100 p-1">Sucursal Córdoba</h3>
-					<CartWidget />
+		<div className="container container-navbar d-flex flex-md-row flex-column">
+			<div className="container-logo w-25">
+				<div>
+					<h1 className="title is-3">SuperCercaTuyo</h1>
 				</div>
-				<div className="h-50">
-					<ul className="buttons d-flex justify-content-evenly align-items-center h-100">
-						<button className="button is-primary">Verduleria</button>
-						<button className="button is-primary">Almacen</button>
-						<button className="button is-primary">Bebidas</button>
-						<button className="button is-primary">Carniceria</button>
-						<button className="button is-primary">Limpieza</button>
-						<button className="button is-primary">Electrodomesticos</button>
-					</ul>
+			</div>
+			<div className="container-info-nav w-75 p-1">
+				<div className="container-principal">
+					<div>
+						<h3 className="subtitle is-4 h-100 p-1">Sucursal Córdoba</h3>
+					</div>
+					<div>
+						<CartWidget />
+					</div>
+				</div>
+				<div className="container-btn h-50">
+					<div className="row">
+						<div className="col-lg-4 my-1 d-flex justify-content-center">
+							<Link to="/" className="btn">
+								Home
+							</Link>
+						</div>
+						<div className="col-lg-4 my-1 d-flex justify-content-center">
+							<Link to="/productos" className="btn">
+								Productos
+							</Link>
+						</div>
+						<div className="col-lg-4 my-1 d-flex justify-content-center">
+							<Link to="" className="btn">
+								Carrito de Compras
+							</Link>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

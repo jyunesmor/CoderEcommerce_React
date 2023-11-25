@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 const cuerpo = () => {
 	return (
 		<div className="section body">
-			<div className="container is-flex is-flex-wrap-wrap is-justify-content-space-evenly">
-				<h1>Bienvenidos al Carrito</h1>
-
-				<div className="button has-text-centered is-primary">
-					<Link to="/productos">Productos</Link>
+			<div className="container d-flex flex-column">
+				<div className="m-auto">
+					<h1 className="title is-size-1">Bienvenidos al Carrito</h1>
+				</div>
+				<div className="m-auto mt-2">
+					<h1 className="subtitle is-size-3">Tu Super Siempre con vos</h1>
 				</div>
 			</div>
 		</div>

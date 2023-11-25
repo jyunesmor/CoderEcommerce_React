@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import "./card.scss";
 
 import { Link } from "react-router-dom";
 
@@ -21,8 +22,10 @@ const Card = ({ producto }) => {
 					</div>
 					<div className="card-footer">
 						<div className="card-footer-item">
-							<div className="button is-primary">
-								<Link to={`/productos/${producto.id}`}>Detalle</Link>
+							<div className="button btn-detalle is-primary">
+								<Link className="link" to={`/productos/${producto.id}`}>
+									+ Info
+								</Link>
 							</div>
 						</div>
 					</div>
