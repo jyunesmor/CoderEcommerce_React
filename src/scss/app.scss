@@ -44,5 +44,19 @@ html {
         }
       }
     }
+
+    .cardDetail {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .section {
+
+        img {
+          width: 150px;
+        }
+      }
+    }
   }
 }

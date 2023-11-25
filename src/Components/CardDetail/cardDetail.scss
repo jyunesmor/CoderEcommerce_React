@@ -1,0 +1,41 @@
+.cardDetail {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .container-card {
+    width: 85%;
+    margin: auto;
+
+    .card-info {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .image-card {
+        width: 50%;
+      }
+
+      .content-card {
+        width: 50%;
+
+        .card-content {
+          width: 90%;
+        }
+
+      }
+
+    }
+
+    .card-footer-item {
+      width: 50%;
+    }
+  }
+
+  .button {
+    margin: auto;
+  }
+}

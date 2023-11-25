@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom";
+
 const Card = ({ producto }) => {
 	return (
 		<>
@@ -19,7 +21,9 @@ const Card = ({ producto }) => {
 					</div>
 					<div className="card-footer">
 						<div className="card-footer-item">
-							<div className="button is-primary">Detalle</div>
+							<div className="button is-primary">
+								<Link to={`/productos/${producto.id}`}>Detalle</Link>
+							</div>
 						</div>
 					</div>
 				</div>

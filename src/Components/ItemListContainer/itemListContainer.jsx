@@ -2,6 +2,7 @@ import Card from "../Card/card";
 import DataProductos from "../../assets/jsonProductos/productos.json";
 
 const itemListContainer = () => {
+	console.log(DataProductos);
 	const product = DataProductos.map((producto) => {
 		return <Card key={producto.id} producto={producto} />;
 	});

@@ -1,5 +1,6 @@
 import { FaMinus, FaPlus } from "react-icons/fa";
 import { useState } from "react";
+import "./itemCount.scss";
 
 const ItemCount = () => {
 	const [count, setCount] = useState(0);
@@ -16,17 +17,22 @@ const ItemCount = () => {
 
 	return (
 		<>
-			<div className="itemCount">
-				<div className="itemrestar has-text-success" onClick={handleClickResta}>
-					<FaMinus />
+			<div className="container itemCounter">
+				<div className="itemCount">
+					<div
+						className="itemrestar has-text-success"
+						onClick={handleClickResta}
+					>
+						<FaMinus />
+					</div>
+					<div className="itemvalor has-text-success">{count}</div>
+					<div className="itemsumar has-text-success" onClick={handleClickSuma}>
+						<FaPlus />
+					</div>
 				</div>
-				<div className="itemvalor has-text-success">{count}</div>
-				<div className="itemsumar has-text-success" onClick={handleClickSuma}>
-					<FaPlus />
+				<div className="button has-background-success is-size-6">
+					Agregar a Carrito
 				</div>
-			</div>
-			<div className="button has-background-success is-size-6">
-				Agregar a Carrito
 			</div>
 		</>
 	);
