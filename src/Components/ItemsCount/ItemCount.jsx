@@ -1,6 +1,5 @@
 import { FaMinus, FaPlus } from "react-icons/fa";
 import { useState } from "react";
-import "./itemCount.scss";
 
 const ItemCount = () => {
 	const [count, setCount] = useState(0);

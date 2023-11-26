@@ -3,7 +3,6 @@
 import ItemCount from "../ItemsCount/ItemCount";
 import { useParams, Link } from "react-router-dom";
 import ProductoData from "../../assets/jsonProductos/productos.json";
-import "./cardDetail.scss";
 
 const CardDetail = () => {
 	const { productoId } = useParams();
@@ -12,7 +11,7 @@ const CardDetail = () => {
 
 	return (
 		<>
-			<div className="container">
+			<div className="container container-cardDetail">
 				<div className="cardDetail">
 					<h1 className="has-text-centered">Detalle Producto</h1>
 					<div className="container-card">

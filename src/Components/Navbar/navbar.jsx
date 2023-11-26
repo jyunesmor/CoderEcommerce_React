@@ -32,7 +32,7 @@ const navbar = () => {
 							</Link>
 						</div>
 						<div className="col-lg-4 my-1 d-flex justify-content-center">
-							<Link to="" className="btn">
+							<Link to="" className="btn disabled">
 								Carrito de Compras
 							</Link>
 						</div>

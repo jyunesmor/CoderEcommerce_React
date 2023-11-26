@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const cuerpo = () => {
 	return (
 		<div className="section body">

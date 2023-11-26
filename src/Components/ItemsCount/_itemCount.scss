@@ -12,6 +12,11 @@
       justify-content: space-evenly;
       align-items: center;
       margin-bottom: 8px;
+
+      @include mobile600 {
+        width: 100%;
+      }
+
     }
 
     .btn-carrito {
@@ -19,6 +24,10 @@
       width: 45%;
       box-shadow: 3px 3px 5px green;
       background: linear-gradient(65deg, rgba(188, 220, 191, 1) 35%, rgba(230, 240, 229, 1) 100%);
+
+      @include mobile600 {
+        width: 100%;
+      }
     }
 
   }
