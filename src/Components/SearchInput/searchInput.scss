@@ -1,0 +1,28 @@
+.container-searchImput {
+  width: 100%;
+  display: flex;
+
+  .cont-input {
+    margin: auto;
+    display: flex;
+
+    .container-input {
+      margin: auto;
+      width: 60%;
+    }
+
+    .container-btnSearch {
+      margin: auto;
+      width: 40%;
+      display: flex;
+
+      .btn {
+        margin: auto;
+        box-shadow: $btnShadow;
+        background: $btnBackGround;
+        width: 85%;
+        color: black;
+      }
+    }
+  }
+}

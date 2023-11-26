@@ -1,6 +1,6 @@
 import Cuerpo from "./Components/Main/cuerpo";
 import Layout from "./Components/Layout/Layout";
-import ItemListContainer from "./Components/ItemListContainer/itemListContainer";
+import Productos from "./Components/Productos/productos";
 import CardDetail from "./Components/CardDetail/CardDetail";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 
@@ -15,7 +15,7 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Layout />}>
 					<Route index element={<Cuerpo />} />
-					<Route path="productos" element={<ItemListContainer />} />
+					<Route path="productos" element={<Productos />} />
 					<Route path="productos/:productoId" element={<CardDetail />} />
 				</Route>
 				{/* 				<Route path="*" element={<Error />} /> */}

@@ -37,7 +37,10 @@ const CardDetail = () => {
 												{producto.tipo}
 											</div>
 											<div className="card-subtitle is-size-7">
-												{producto.capacidad}
+												{producto.descripcion}
+											</div>
+											<div className="card-subtitle mt-3 is-size-6">
+												Capacidad: {producto.capacidad}
 											</div>
 											<div className="card-subtitle is-size-4 has-text-weight-semibold pt-2 mt-2">
 												$ {producto.precio.toFixed(2)}
