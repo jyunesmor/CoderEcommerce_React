@@ -5,8 +5,8 @@ const cuerpo = () => {
 				<div className="m-auto">
 					<h1 className="title is-size-1">Bienvenidos al Carrito</h1>
 				</div>
-				<div className="m-auto mt-2">
-					<h1 className="subtitle is-size-3">Tu Super Siempre con vos</h1>
+				<div className="m-auto mt-5">
+					<h2 className="subtitle is-size-3">Tu Super Siempre con vos</h2>
 				</div>
 			</div>
 		</div>

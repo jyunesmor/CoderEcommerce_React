@@ -1,17 +1,27 @@
 .container-navbar {
   display: flex;
   padding: 20px;
+  width: 100%;
+
+  @include mobile600 {
+    flex-direction: column;
+  }
 
   .container-logo {
+    width: 85%;
     margin: auto;
     display: flex;
     justify-content: center;
 
 
-    h1 {
-      margin: auto;
-    }
+    .container-ti {
+      display: inline;
 
+      h1 {
+        width: 100%;
+        margin: auto;
+      }
+    }
   }
 
   .container-info-nav {
@@ -38,12 +48,20 @@
         display: flex;
         justify-content: space-evenly;
 
-        .btn {
-          background: linear-gradient(65deg, rgba(188, 220, 191, 1) 35%, rgba(230, 240, 229, 1) 100%);
-          width: 85%;
-          color: black;
-          box-shadow: 3px 3px 5px green;
+        .item-btn {
+
+          display: flex;
+          justify-content: center;
+
+          .btn {
+            box-shadow: $btnShadow;
+            background: $btnBackGround;
+            width: 85%;
+            color: black;
+
+          }
         }
+
       }
     }
   }

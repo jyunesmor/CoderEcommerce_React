@@ -11,16 +11,21 @@
     flex-direction: column;
     justify-content: center;
 
+    @include mobile {
+      width: 85%;
+    }
+
+
     .container-card {
       width: 85%;
       margin: auto;
 
-      @include mobile600 {
-        width: 100%;
+      @include mobile {
+        width: 95%;
       }
 
       .card {
-        box-shadow: 6px 6px 12px lightgreen;
+        box-shadow: $btnShadow;
 
         .card-info {
           width: 100%;
@@ -60,8 +65,8 @@
       margin: auto;
       width: 45%;
       margin-bottom: 30px;
-      box-shadow: 3px 3px 5px green;
-      background: linear-gradient(65deg, rgba(188, 220, 191, 1) 35%, rgba(230, 240, 229, 1) 100%);
+      box-shadow: $btnShadow;
+      background: $btnBackGround;
 
       .link {
         text-decoration: none;

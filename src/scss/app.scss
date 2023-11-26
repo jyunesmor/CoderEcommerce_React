@@ -1,9 +1,19 @@
+/* 
+  Tools
+*/
+@import './Generales/variables';
+@import './Generales/reset';
 @import './Generales/mediaQuerys';
 @import './Generales/mixins';
-@import './Generales/variables';
+/* 
+  Components
+*/
 @import '../Components/Card/card.scss';
 @import '../Components/CardDetail/cardDetail.scss';
 @import '../Components/Navbar/navbar.scss';
 @import '../Components/Main/cuerpo.scss';
 @import '../Components/CartWidget/cartWidget.scss';
 @import '../Components/ItemsCount/itemCount.scss';
+@import '../Components/Layout/layout.scss';
+@import '../Components/ItemListContainer/itemListContainer.scss';
+@import '../Components/Footer/footer.scss';
