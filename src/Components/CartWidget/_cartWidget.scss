@@ -1,0 +1,27 @@
+.cartwidget {
+  position: relative;
+
+  @include tablets {
+    position: fixed;
+    z-index: 1;
+    bottom: 40px;
+    right: 60px;
+    scale: 1.4;
+  }
+
+  .cartWidgetNum {
+    position: absolute;
+    right: -10px;
+    bottom: -6px;
+    background-color: cadetblue;
+    opacity: .5;
+    width: 26px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: 900;
+  }
+}

@@ -50,7 +50,7 @@ const CardDetail = () => {
 								</div>
 								<div className="card-footer">
 									<div className="card-footer-item">
-										<ItemCount />
+										<ItemCount item={producto} />
 									</div>
 								</div>
 							</div>

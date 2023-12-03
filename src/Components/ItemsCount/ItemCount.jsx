@@ -1,7 +1,11 @@
+/* eslint-disable react/prop-types */
 import { FaMinus, FaPlus } from "react-icons/fa";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { CartContext } from "../CartContext/cartProvider";
 
-const ItemCount = () => {
+const ItemCount = ({ item }) => {
+	const { addItem } = useContext(CartContext);
+
 	const [count, setCount] = useState(0);
 
 	function handleClickSuma() {
@@ -29,7 +33,12 @@ const ItemCount = () => {
 						<FaPlus />
 					</div>
 				</div>
-				<div className="button btn-carrito has-background-success is-size-6">
+				<div
+					className="button btn-carrito has-background-success is-size-6"
+					onClick={() => {
+						addItem(item, count);
+					}}
+				>
 					Agregar a Carrito
 				</div>
 			</div>

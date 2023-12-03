@@ -8,19 +8,22 @@ import "bulma/css/bulma.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "./scss/app.scss";
+import CartProvider from "./Components/CartContext/cartProvider";
 
 function App() {
 	return (
-		<BrowserRouter>
-			<Routes>
-				<Route path="/" element={<Layout />}>
-					<Route index element={<Cuerpo />} />
-					<Route path="productos" element={<Productos />} />
-					<Route path="productos/:productoId" element={<CardDetail />} />
-				</Route>
-				{/* 				<Route path="*" element={<Error />} /> */}
-			</Routes>
-		</BrowserRouter>
+		<CartProvider>
+			<BrowserRouter>
+				<Routes>
+					<Route path="/" element={<Layout />}>
+						<Route index element={<Cuerpo />} />
+						<Route path="productos" element={<Productos />} />
+						<Route path="productos/:productoId" element={<CardDetail />} />
+					</Route>
+					{/* 				<Route path="*" element={<Error />} /> */}
+				</Routes>
+			</BrowserRouter>
+		</CartProvider>
 	);
 }
 
