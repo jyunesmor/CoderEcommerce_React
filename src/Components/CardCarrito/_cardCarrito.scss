@@ -1,0 +1,130 @@
+.container-carrito {
+  width: 100%;
+  row-gap: 10px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .carrito-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .card-image {
+      width: 10%;
+      display: flex;
+      padding: 0 !important;
+
+      .image {
+        margin: auto;
+
+        img {
+          width: 80px;
+        }
+      }
+    }
+
+    .card-content {
+      margin: auto;
+      width: 65%;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      @include mobile600 {
+        font-size: 0.85rem;
+      }
+
+      .prod-marca {
+        width: 75px;
+        text-align: center;
+
+        @include mobile600 {
+          display: none;
+        }
+      }
+
+      .caract-prod {
+        width: 25%;
+        text-align: center;
+
+        @include mobile600 {
+          display: none;
+        }
+      }
+
+      .precio {
+        width: 25%;
+        text-align: center;
+
+        @include mobile600 {
+          font-size: 0.75rem;
+        }
+      }
+
+      .itemCount {
+        width: 25%;
+        padding: 2px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
+        @include mobile600 {
+          font-size: 0.65rem;
+        }
+
+        .item {
+          font-weight: 200;
+        }
+      }
+    }
+
+    .card-footer {
+      width: 25%;
+
+      @include mobile600 {
+        width: 35%;
+      }
+
+      .card-footer-item {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        @include mobile600 {
+          width: 30%;
+          padding: 10px;
+        }
+
+        .btn-detalle {
+          width: 50%;
+          color: black;
+          font-weight: 700;
+          text-align: center;
+
+          @include mobile600 {
+            width: 60%;
+            font-size: 0.75rem;
+          }
+        }
+
+        .icon-delete {
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          filter: drop-shadow($btnShadow);
+
+          @include mobile600 {
+            width: 15%;
+          }
+        }
+      }
+    }
+
+  }
+}

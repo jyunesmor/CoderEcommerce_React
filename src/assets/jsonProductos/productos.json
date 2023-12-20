@@ -1,5 +1,5 @@
-[
-	{
+{
+	"1": {
 		"id": 1,
 		"imagen": "https://i.ibb.co/sJxYhJT/Aceite-Pureza-900.png",
 		"nombre": "Aceite",
@@ -8,7 +8,7 @@
 		"capacidad": "900 Ml",
 		"precio": 853
 	},
-	{
+	"2": {
 		"id": 2,
 		"imagen": "https://i.ibb.co/k62Yk7C/Aceite-Lira-900.png",
 		"nombre": "Aceite",
@@ -17,17 +17,16 @@
 		"capacidad": "900 Ml",
 		"precio": 818
 	},
-	{
+	"3": {
 		"id": 3,
 		"imagen": "https://i.ibb.co/6B5cp0f/Aceite-Cocinero-900.png",
 		"nombre": "Aceite",
 		"marca": "Cocinero",
 		"tipo": "Girasol",
-		"descripcion": "El Aceite Puro de Girasol Cocinero, se obtiene a partir de la extracción de semillas de girasol seleccionadas, logrando asi un productode calidad, que ayuda a realizar el sabor de sus comidas mas intensos. Aporta Omega 6, y Vitamina E",
 		"capacidad": "900 Ml",
 		"precio": 895
 	},
-	{
+	"4": {
 		"id": 4,
 		"imagen": "https://i.ibb.co/1f4Cnsm/Aceite-Legitimo-900.png",
 		"nombre": "Aceite",
@@ -36,7 +35,7 @@
 		"capacidad": "900 Ml",
 		"precio": 416
 	},
-	{
+	"5": {
 		"id": 5,
 		"imagen": "https://i.ibb.co/0Mw63P4/Aceite-Pureza-litro-medio.png",
 		"nombre": "Aceite",
@@ -45,7 +44,7 @@
 		"capacidad": "1500 Ml",
 		"precio": 853
 	},
-	{
+	"6": {
 		"id": 6,
 		"imagen": "https://i.ibb.co/wztm591/Aceite-Lira-1500.png",
 		"nombre": "Aceite",
@@ -54,7 +53,7 @@
 		"capacidad": "1500 Ml",
 		"precio": 1380
 	},
-	{
+	"7": {
 		"id": 7,
 		"imagen": "https://i.ibb.co/XzGgMKH/Aceite-Cocinero-1500.png",
 		"nombre": "Aceite",
@@ -63,7 +62,7 @@
 		"capacidad": "1500 Ml",
 		"precio": 1440
 	},
-	{
+	"8": {
 		"id": 8,
 		"imagen": "https://i.ibb.co/ggqnhgW/Aceite-Legitimo-1500.png",
 		"nombre": "Aceite",
@@ -72,7 +71,7 @@
 		"capacidad": "1500 Ml",
 		"precio": 665
 	},
-	{
+	"9": {
 		"id": 9,
 		"imagen": "https://i.ibb.co/b3jt8Ng/Vinagre-Menoyo-Alcohol-500.png",
 		"nombre": "Vinagre",
@@ -81,7 +80,7 @@
 		"capacidad": "500 Ml",
 		"precio": 236.16
 	},
-	{
+	"10": {
 		"id": 10,
 		"imagen": "https://i.ibb.co/b3jt8Ng/Vinagre-Menoyo-Alcohol-500.png",
 		"nombre": "Vinagre",
@@ -90,7 +89,7 @@
 		"capacidad": "500 Ml",
 		"precio": 399
 	},
-	{
+	"11": {
 		"id": 11,
 		"imagen": "https://i.ibb.co/rkzVPTB/Vinagre-Casalta-Alcohol-1300.png",
 		"nombre": "Vinagre",
@@ -99,7 +98,7 @@
 		"capacidad": "1300 Ml",
 		"precio": 543
 	},
-	{
+	"12": {
 		"id": 12,
 		"imagen": "https://i.ibb.co/dbm2LT2/Vinagre-Carrefour-250.png",
 		"nombre": "Vinagre",
@@ -108,7 +107,7 @@
 		"capacidad": "250 Ml",
 		"precio": 138
 	},
-	{
+	"13": {
 		"id": 13,
 		"imagen": "https://i.ibb.co/GPBzrpR/Natura-Mayonesa-500.png",
 		"nombre": "Mayonesa",
@@ -116,7 +115,7 @@
 		"capacidad": "500 Grs",
 		"precio": 447
 	},
-	{
+	"14": {
 		"id": 14,
 		"imagen": "https://i.ibb.co/GJCwg7Y/Hellmanns-475.png",
 		"nombre": "Mayonesa",
@@ -124,7 +123,7 @@
 		"capacidad": "475 Grs",
 		"precio": 938
 	},
-	{
+	"15": {
 		"id": 15,
 		"imagen": "https://i.ibb.co/djTTjBZ/Natura-Mostaza-500.png",
 		"nombre": "Mostaza",
@@ -132,7 +131,7 @@
 		"capacidad": "500 Grs",
 		"precio": 451
 	},
-	{
+	"16": {
 		"id": 16,
 		"imagen": "https://i.ibb.co/BKYNNrt/Natura-Mostaza-250.png",
 		"nombre": "Mostaza",
@@ -140,7 +139,7 @@
 		"capacidad": "250 Grs",
 		"precio": 238.5
 	},
-	{
+	"17": {
 		"id": 17,
 		"imagen": "https://i.ibb.co/sCnLvhL/Mostaza-de-Fiesta-220.png",
 		"nombre": "Mostaza",
@@ -148,7 +147,7 @@
 		"capacidad": "220 Grs",
 		"precio": 271.5
 	},
-	{
+	"18": {
 		"id": 18,
 		"imagen": "https://i.ibb.co/RzVXtDR/Hellmannsketchup-250.png",
 		"nombre": "Ketchup",
@@ -156,7 +155,7 @@
 		"capacidad": "250 Grs",
 		"precio": 403
 	},
-	{
+	"19": {
 		"id": 19,
 		"imagen": "https://i.ibb.co/nb5Jgt9/Natura-Ketchup-250.png",
 		"nombre": "Ketchup",
@@ -164,4 +163,4 @@
 		"capacidad": "250 Grs",
 		"precio": 246.5
 	}
-]
+}

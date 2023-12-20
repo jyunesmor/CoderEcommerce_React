@@ -5,6 +5,12 @@
     }
   }
 
+  .card-content {
+    .card-carrito {
+      display: none;
+    }
+  }
+
   .card-footer-item {
     .btn-detalle {
       box-shadow: $btnShadow;

@@ -1,0 +1,42 @@
+  .contenedor-pedido {
+    width: 100%;
+
+    .form {
+      width: 50%;
+      padding: 10px;
+      background-color: lightcoral;
+    }
+
+    .detalle-pedido {
+      width: 50%;
+      height: auto;
+      padding: 10px;
+
+
+      .carrito-pedido {
+        height: 75%;
+        background-color: lightblue;
+        display: flex;
+
+        .list-prod {
+          width: 100%;
+        }
+      }
+
+      .enviar-cont {
+        display: flex;
+        height: 25%;
+        background-color: lightgreen;
+
+        .total-pedido {
+          margin: auto;
+        }
+
+        .btn {
+          margin: auto;
+          box-shadow: $btnShadow;
+          background: $btnBackGround;
+        }
+      }
+    }
+  }

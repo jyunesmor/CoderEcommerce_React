@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import { FaMinus, FaPlus } from "react-icons/fa";
 import { useContext, useState } from "react";
-import { CartContext } from "../CartContext/cartProvider";
+import { CartContext } from "../../assets/Context/CartContext/cartProvider";
 
 const ItemCount = ({ item }) => {
-	const { addItem } = useContext(CartContext);
+	const { addProduct } = useContext(CartContext);
 
 	const [count, setCount] = useState(0);
 
@@ -33,10 +33,13 @@ const ItemCount = ({ item }) => {
 						<FaPlus />
 					</div>
 				</div>
+				<div className="importeTotal">
+					Importe Total $ {item.precio * count}
+				</div>
 				<div
 					className="button btn-carrito has-background-success is-size-6"
 					onClick={() => {
-						addItem(item, count);
+						addProduct(item, count);
 					}}
 				>
 					Agregar a Carrito

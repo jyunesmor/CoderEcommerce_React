@@ -8,6 +8,7 @@
 /* 
   Components
 */
+@import '../Components/Checkout/checkout';
 @import '../Components/Card/card.scss';
 @import '../Components/CardDetail/cardDetail.scss';
 @import '../Components/Navbar/navbar.scss';
@@ -18,4 +19,8 @@
 @import '../Components/ItemListContainer/itemListContainer.scss';
 @import '../Components/Footer/footer.scss';
 @import '../Components/SearchInput/searchInput.scss';
-@import "../Components/Productos/productos.scss"
+@import "../Components/Productos/productos.scss";
+@import "../Components/CardList/cardList";
+@import "../Components/CardCarrito/cardCarrito";
+@import "../Components/ItemListCarrito/itemListCarrito";
+@import "../Components/Login/login";

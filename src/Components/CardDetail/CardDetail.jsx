@@ -2,12 +2,14 @@
 
 import ItemCount from "../ItemsCount/ItemCount";
 import { useParams, Link } from "react-router-dom";
-import ProductoData from "../../assets/jsonProductos/productos.json";
+import { useContext } from "react";
+import { CartContext } from "../../assets/Context/CartContext/cartProvider";
 
 const CardDetail = () => {
+	const { productosList } = useContext(CartContext);
 	const { productoId } = useParams();
 
-	const producto = ProductoData.find((producto) => producto.id == productoId);
+	const producto = productosList.find((producto) => producto.id == productoId);
 
 	return (
 		<>

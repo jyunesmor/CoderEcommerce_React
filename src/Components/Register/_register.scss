@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+
+  .container-Form {
+    width: 35%;
+    height: 350px;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 35px;
+    box-shadow: $btnShadow;
+    background: $btnBackGround;
+
+    .form-control {
+      box-shadow: $btnShadow;
+      border-radius: 15px;
+    }
+
+    .btn {
+      box-shadow: $btnShadow;
+      background: $btnBackGround;
+      width: 50%;
+      margin: auto;
+      color: black;
+      cursor: pointer;
+      text-align: center;
+    }
+
+  }
+}

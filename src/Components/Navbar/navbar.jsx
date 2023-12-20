@@ -1,7 +1,18 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import CartWidget from "../CartWidget/cartWidget";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../assets/Context/AuthContext/authProvider";
+import { useNavigate } from "react-router-dom";
 
 const navbar = () => {
+	const { logOut } = useAuth();
+	const navigate = useNavigate();
+
+	const handleLogOut = () => {
+		logOut();
+		navigate("/login");
+	};
+
 	return (
 		<>
 			<div className="container container-navbar">
@@ -33,9 +44,14 @@ const navbar = () => {
 									</Link>
 								</div>
 								<div className="item-btn col-lg-4 my-1">
-									<Link to="" className="btn disabled">
+									<Link to="/carrito" className="btn">
 										Carrito de Compras
 									</Link>
+								</div>
+								<div className="item-btn col-lg-4 my-1">
+									<button className="btn" onClick={handleLogOut}>
+										Cerrar Sesión
+									</button>
 								</div>
 							</div>
 						</div>
