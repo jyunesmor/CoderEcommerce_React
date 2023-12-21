@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../assets/Context/AuthContext/authProvider";
 
 function register() {
-	const { signUp } = useAuth();
+	const { signUp, signInWithGoogle } = useAuth();
 	const navigate = useNavigate();
 
 	const [email, setEmail] = useState("");
@@ -18,6 +18,10 @@ function register() {
 		} catch (error) {
 			console.log(error);
 		}
+	};
+
+	const signWithGoogle = async () => {
+		await signInWithGoogle();
 	};
 
 	return (
@@ -53,8 +57,12 @@ function register() {
 				>
 					Registrar
 				</button>
-				<button type="submit" className="btn btn-primary">
-					ingresar con goglle
+				<button
+					type="submit"
+					className="btn btn-primary"
+					onClick={signWithGoogle}
+				>
+					Ingresar con google
 				</button>
 			</form>
 		</div>
