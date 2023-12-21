@@ -2,14 +2,18 @@
 import CartWidget from "../CartWidget/cartWidget";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../assets/Context/AuthContext/authProvider";
+import { useContext } from "react";
+import { CartContext } from "../../assets/Context/CartContext/cartProvider";
 import { useNavigate } from "react-router-dom";
 
 const navbar = () => {
-	const { logOut } = useAuth();
+	const { logOut, user } = useAuth();
 	const navigate = useNavigate();
+	const { vaciarCarrito } = useContext(CartContext);
 
 	const handleLogOut = () => {
 		logOut();
+		vaciarCarrito();
 		navigate("/");
 	};
 
@@ -34,9 +38,15 @@ const navbar = () => {
 						<div className="container-btn h-50">
 							<div className="row">
 								<div className="item-btn col-lg-4 my-1">
-									<Link to="/cuerpo" className="btn">
-										Home
-									</Link>
+									{user ? (
+										<Link to="/cuerpo" className="btn">
+											Home
+										</Link>
+									) : (
+										<Link to="/" className="btn">
+											Home
+										</Link>
+									)}
 								</div>
 								<div className="item-btn col-lg-4 my-1">
 									<Link to="/productos" className="btn">

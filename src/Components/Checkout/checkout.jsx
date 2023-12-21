@@ -39,24 +39,23 @@ function checkout() {
 
 	if (pedidoId) {
 		Swal.fire({
-			position: "top-end",
 			icon: "success",
 			title: "Tu Pedido fue Realizado",
 			text: `el Número es ${pedidoId}`,
 			showConfirmButton: false,
-			timer: 600,
+			timer: 6000,
 		});
 		navigate("/cuerpo");
 	}
 
 	return (
-		<div className="container cont-checkout">
-			Termina tu Pedido
+		<div className="cont-checkout">
 			<form
 				className="contenedor-pedido d-flex"
 				onSubmit={handleSubmit(comprar)}
 			>
 				<div className="m-auto">
+					<div className="tit-check has-text-centered">Datos del pedido</div>
 					<div className="inputs-group m-auto d-flex flex-column">
 						<div className="input-item p-3 m-auto w-100">
 							<label>Ingresa tu nombre completo</label>
@@ -97,14 +96,17 @@ function checkout() {
 					</div>
 				</div>
 				<div className="detalle-pedido">
+					<div className="tit-check  has-text-centered">
+						Elementos Agregados
+					</div>
 					<div className="carrito-pedido">
 						<div className="list-prod">{product}</div>
 					</div>
 					<div className="enviar-cont">
 						<div className="total-pedido">
-							El total a Abonar es: $ {totalQuantity}
+							El total a Abonar es: $ {totalQuantity.toFixed(2)}
 						</div>
-						<div>
+						<div className="btn-cont">
 							<button className="btn" type="submit">
 								Realizar Pedido
 							</button>

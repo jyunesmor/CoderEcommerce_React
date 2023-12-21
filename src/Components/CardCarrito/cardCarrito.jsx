@@ -35,7 +35,7 @@ const CardCarrito = ({ producto }) => {
 						</figure>
 					</div>
 					<div className="card-content">
-						<div className="prod-marca is-size-56 has-text-centered">
+						<div className="prod-marca is-size-5 has-text-centered">
 							{producto.nombre} <br />
 							<span className="is-size-7">{producto.marca}</span>
 						</div>

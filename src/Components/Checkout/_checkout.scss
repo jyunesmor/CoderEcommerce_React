@@ -1,41 +1,63 @@
-  .contenedor-pedido {
+  .cont-checkout {
     width: 100%;
 
-    .form {
-      width: 50%;
-      padding: 10px;
-      background-color: lightcoral;
-    }
+    .contenedor-pedido {
+      width: 100%;
+      margin: 80px auto;
+      display: flex;
 
-    .detalle-pedido {
-      width: 50%;
-      height: auto;
-      padding: 10px;
-
-
-      .carrito-pedido {
-        height: 75%;
-        background-color: lightblue;
-        display: flex;
-
-        .list-prod {
-          width: 100%;
-        }
+      @include notebook {
+        flex-direction: column;
       }
 
-      .enviar-cont {
-        display: flex;
-        height: 25%;
-        background-color: lightgreen;
+      .tit-check {
+        font-size: 1.4rem;
+        text-decoration: underline;
+      }
 
-        .total-pedido {
-          margin: auto;
+      .detalle-pedido {
+        margin: auto;
+        width: 50%;
+        height: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+
+        @include notebook {
+          width: 90%;
         }
 
-        .btn {
-          margin: auto;
-          box-shadow: $btnShadow;
-          background: $btnBackGround;
+        .carrito-pedido {
+          height: 75%;
+          display: flex;
+          padding: 10px;
+
+          .list-prod {
+            width: 100%;
+          }
+        }
+
+        .enviar-cont {
+          margin-top: 50px;
+          display: flex;
+          align-items: center;
+          height: 25%;
+
+
+          .total-pedido {
+            margin: auto;
+            font-weight: 600;
+            font-style: italic;
+          }
+
+          .btn-cont {
+            margin: auto;
+
+            .btn {
+              box-shadow: $btnShadow;
+              background: $btnBackGround;
+            }
+          }
         }
       }
     }

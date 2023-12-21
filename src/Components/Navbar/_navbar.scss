@@ -6,6 +6,7 @@
     display: flex;
     width: 100%;
 
+
     .container-logo {
       width: 30%;
       margin: auto;
@@ -40,16 +41,13 @@
 
       .container-btn {
         width: 100%;
-        margin: auto;
-        padding: 10px;
-
+        padding: 5px;
 
         .row {
           display: flex;
           justify-content: space-evenly;
 
           .item-btn {
-
             display: flex;
             justify-content: center;
 

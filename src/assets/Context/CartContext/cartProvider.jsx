@@ -8,12 +8,24 @@ export const CartContext = createContext();
 const CartProvider = ({ children }) => {
 	const [carrito, setCarrito] = useState([]);
 	const [productosList, setProductosList] = useState([]);
+	const [pedidosList, setPedidosList] = useState([]);
 
 	const productListRef = collection(db, "productos");
+	const pedidosListRef = collection(db, "pedidos");
 
 	useEffect(() => {
 		getDocs(productListRef).then((resp) => {
 			setProductosList(
+				resp.docs.map((doc) => {
+					return { ...doc.data(), id: doc.id };
+				})
+			);
+		});
+	}, []);
+
+	useEffect(() => {
+		getDocs(pedidosListRef).then((resp) => {
+			setPedidosList(
 				resp.docs.map((doc) => {
 					return { ...doc.data(), id: doc.id };
 				})
@@ -63,6 +75,7 @@ const CartProvider = ({ children }) => {
 				carrito,
 				setCarrito,
 				productosList,
+				pedidosList,
 				totalQuantity,
 				addProduct,
 				borrarProduct,

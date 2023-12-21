@@ -2,9 +2,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../assets/Context/AuthContext/authProvider";
+import { auth, googleProvider } from "../../config/firebase";
 
 function register() {
-	const { signUp, signInWithGoogle } = useAuth();
+	const { signUp } = useAuth();
 	const navigate = useNavigate();
 
 	const [email, setEmail] = useState("");
@@ -18,10 +19,6 @@ function register() {
 		} catch (error) {
 			console.log(error);
 		}
-	};
-
-	const signWithGoogle = async () => {
-		await signInWithGoogle();
 	};
 
 	return (
@@ -56,13 +53,6 @@ function register() {
 					onClick={handleSubmit}
 				>
 					Registrar
-				</button>
-				<button
-					type="submit"
-					className="btn btn-primary"
-					onClick={signWithGoogle}
-				>
-					Ingresar con google
 				</button>
 			</form>
 		</div>

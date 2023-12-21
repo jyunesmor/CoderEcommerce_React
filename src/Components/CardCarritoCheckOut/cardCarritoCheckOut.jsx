@@ -1,5 +1,9 @@
 /* eslint-disable react/prop-types */
+import { useContext } from "react";
+import { CartContext } from "../../assets/Context/CartContext/cartProvider";
 const CardCarritoCheckOut = ({ producto }) => {
+	const { borrarProduct } = useContext(CartContext);
+
 	return (
 		<>
 			<div className="container-carrito">
@@ -10,12 +14,16 @@ const CardCarritoCheckOut = ({ producto }) => {
 						</figure>
 					</div>
 					<div className="card-content">
-						<div className="prod-marca is-size-56 has-text-centered">
+						<div className="prod-nom is-size-5 has-text-centered">
 							{producto.nombre}
-							<span className="is-size-7">{producto.marca}</span>
 						</div>
-						<div className="caract-prod is-size-7">
+						<div className="prod-marca is-size-7 has-text-centered">
+							{producto.marca}
+						</div>
+						<div className="prod-capa is-size-7 has-text-centered">
 							{producto.capacidad}
+						</div>
+						<div className="prod-tipo is-size-7 has-text-centered">
 							{producto.tipo}
 						</div>
 					</div>

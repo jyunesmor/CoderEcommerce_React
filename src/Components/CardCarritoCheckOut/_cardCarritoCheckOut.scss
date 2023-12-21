@@ -42,18 +42,11 @@
         width: 75px;
         text-align: center;
 
-        @include mobile600 {
-          display: none;
-        }
       }
 
       .caract-prod {
         width: 25%;
         text-align: center;
-
-        @include mobile600 {
-          display: none;
-        }
       }
 
       .precio {
@@ -83,7 +76,7 @@
     }
 
     .card-footer {
-      width: 25%;
+      width: 30%;
 
       @include mobile600 {
         width: 35%;
@@ -95,12 +88,12 @@
         align-items: center;
 
         @include mobile600 {
-          width: 30%;
+          width: 25%;
           padding: 10px;
         }
 
         .btn-detalle {
-          width: 50%;
+          width: 35%;
           color: black;
           font-weight: 700;
           text-align: center;
