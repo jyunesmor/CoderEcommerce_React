@@ -34,7 +34,7 @@ const navbar = () => {
 						<div className="container-btn h-50">
 							<div className="row">
 								<div className="item-btn col-lg-4 my-1">
-									<Link to="/" className="btn">
+									<Link to="/cuerpo" className="btn">
 										Home
 									</Link>
 								</div>

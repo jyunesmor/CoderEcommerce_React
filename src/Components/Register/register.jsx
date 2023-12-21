@@ -14,7 +14,7 @@ function register() {
 		e.preventDefault();
 		try {
 			await signUp(email, password);
-			navigate("/");
+			navigate("/cuerpo");
 		} catch (error) {
 			console.log(error);
 		}

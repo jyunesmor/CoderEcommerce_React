@@ -1,10 +1,10 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useState } from "react";
 import { useAuth } from "../../assets/Context/AuthContext/authProvider";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function login() {
-	const { logIn, signInWithGoogle } = useAuth();
+	const { logIn } = useAuth();
 	const navigate = useNavigate();
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
@@ -17,10 +17,6 @@ function login() {
 		} catch (error) {
 			console.log(error);
 		}
-	};
-
-	const signInGoogle = async () => {
-		await signInWithGoogle();
 	};
 
 	return (
@@ -55,13 +51,9 @@ function login() {
 				>
 					Ingresar
 				</button>
-				<button
-					type="submit"
-					className="btn btn-primary"
-					onClick={signInGoogle}
-				>
-					Ingresar con Google
-				</button>
+				<Link to={"/register"} type="submit" className="btn btn-primary">
+					Registrate
+				</Link>
 			</form>
 		</div>
 	);
