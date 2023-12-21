@@ -46,7 +46,7 @@ function checkout() {
 			showConfirmButton: false,
 			timer: 600,
 		});
-		navigate("/");
+		navigate("/cuerpo");
 	}
 
 	return (

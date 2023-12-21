@@ -22,8 +22,8 @@ function App() {
 				<BrowserRouter>
 					<Routes>
 						<Route path="/" element={<Layout />}>
-							<Route index element={<Cuerpo />} />
-							<Route path="login" element={<Login />} />
+							<Route index="login" element={<Login />} />
+							<Route path="cuerpo" element={<Cuerpo />} />
 							<Route path="register" element={<Register />} />
 							<Route path="productos" element={<Productos />} />
 							<Route path="productos/:productoId" element={<CardDetail />} />

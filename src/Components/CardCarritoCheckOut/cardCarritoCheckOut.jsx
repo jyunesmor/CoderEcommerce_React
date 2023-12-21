@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-const CardCarrito = ({ producto }) => {
+const CardCarritoCheckOut = ({ producto }) => {
 	return (
 		<>
 			<div className="container-carrito">
@@ -45,4 +45,4 @@ const CardCarrito = ({ producto }) => {
 	);
 };
 
-export default CardCarrito;
+export default CardCarritoCheckOut;

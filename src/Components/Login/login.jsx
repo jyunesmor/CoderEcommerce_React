@@ -13,7 +13,7 @@ function login() {
 		e.preventDefault();
 		try {
 			await logIn(email, password);
-			navigate("/");
+			navigate("/cuerpo");
 		} catch (error) {
 			console.log(error);
 		}
