@@ -1,3 +1,11 @@
+/*! Media_Query 1200px */
+
+@mixin desktop {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
 /*! Media_Query 900px */
 
 @mixin notebook {

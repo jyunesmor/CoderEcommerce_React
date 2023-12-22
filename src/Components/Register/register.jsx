@@ -22,8 +22,8 @@ function register() {
 	};
 
 	return (
-		<div className="container">
-			<form className="container-Form">
+		<div className="container-log">
+			<form className="formulario">
 				<div className="mb-3">
 					<label className="form-label" htmlFor="email">
 						Email address

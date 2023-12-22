@@ -11,7 +11,8 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../assets/Context/AuthContext/authProvider";
 
 function checkout() {
-	const { carrito, totalQuantity, vaciarCarrito } = useContext(CartContext);
+	const { carrito, totalQuantity, vaciarCarrito, getPedidosLista } =
+		useContext(CartContext);
 	const navigate = useNavigate();
 	const { user } = useAuth();
 
@@ -31,6 +32,7 @@ function checkout() {
 			setPedidoId(doc.id);
 			vaciarCarrito();
 		});
+		getPedidosLista();
 	};
 
 	const product = carrito.map((product) => {

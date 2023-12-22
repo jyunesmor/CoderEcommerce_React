@@ -1,5 +1,4 @@
 function pedidos({ pedidos }) {
-	console.log(pedidos);
 	return (
 		<table className="table table-striped">
 			<thead>

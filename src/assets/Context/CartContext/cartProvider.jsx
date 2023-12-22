@@ -23,14 +23,18 @@ const CartProvider = ({ children }) => {
 		});
 	}, []);
 
-	useEffect(() => {
-		getDocs(pedidosListRef).then((resp) => {
+	const getPedidosLista = async () => {
+		await getDocs(pedidosListRef).then((resp) => {
 			setPedidosList(
 				resp.docs.map((doc) => {
 					return { ...doc.data(), id: doc.id };
 				})
 			);
 		});
+	};
+
+	useEffect(() => {
+		getPedidosLista();
 	}, []);
 
 	const addProduct = (product, count) => {
@@ -76,6 +80,7 @@ const CartProvider = ({ children }) => {
 				setCarrito,
 				productosList,
 				pedidosList,
+				getPedidosLista,
 				totalQuantity,
 				addProduct,
 				borrarProduct,

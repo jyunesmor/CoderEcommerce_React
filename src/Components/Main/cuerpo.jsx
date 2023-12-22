@@ -11,7 +11,6 @@ const cuerpo = () => {
 	const pedidosFiltered = pedidosList.filter(
 		(pedidos) => pedidos.id_usuario === user.uid
 	);
-	console.log(pedidosFiltered);
 
 	return (
 		<div className="section body">

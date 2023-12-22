@@ -1,21 +1,40 @@
-.container {
+.container-log {
+  width: 85%;
   display: flex;
+  margin: auto;
+  padding: 0;
 
-  .container-Form {
+  .formulario {
     width: 35%;
     height: 350px;
     margin: auto;
-    margin-top: 60px;
+    margin: 60px auto;
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 25px;
     border: 1px solid black;
-    border-radius: 35px;
+    border-radius: 10%;
     box-shadow: $btnShadow;
     background: $btnBackGround;
 
+    @include desktop {
+      width: 45%;
+    }
+
     @include notebook {
+      width: 50%;
+    }
+
+    @include tablets {
       width: 60%;
+    }
+
+    @include mobile600 {
+      width: 70%;
+    }
+
+    @include mobile {
+      width: 85%;
     }
 
     .form-control {
@@ -32,6 +51,5 @@
       cursor: pointer;
       text-align: center;
     }
-
   }
 }
