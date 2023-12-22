@@ -37,27 +37,31 @@ const navbar = () => {
 						</div>
 						<div className="container-btn h-50">
 							<div className="row">
-								<div className="item-btn col-lg-4 my-1">
-									{user ? (
-										<Link to="/cuerpo" className="btn">
-											Home
-										</Link>
-									) : (
-										<Link to="/" className="btn">
-											Home
-										</Link>
-									)}
-								</div>
-								<div className="item-btn col-lg-4 my-1">
-									<Link to="/productos" className="btn">
-										Productos
-									</Link>
-								</div>
-								<div className="item-btn col-lg-4 my-1">
-									<Link to="/carrito" className="btn">
-										Carrito de Compras
-									</Link>
-								</div>
+								{user && (
+									<>
+										<div className="item-btn col-lg-4 my-1">
+											{user ? (
+												<Link to="/cuerpo" className="btn">
+													Home
+												</Link>
+											) : (
+												<Link to="/" className="btn">
+													Home
+												</Link>
+											)}
+										</div>
+										<div className="item-btn col-lg-4 my-1">
+											<Link to="/productos" className="btn">
+												Productos
+											</Link>
+										</div>
+										<div className="item-btn col-lg-4 my-1">
+											<Link to="/carrito" className="btn">
+												Carrito de Compras
+											</Link>
+										</div>
+									</>
+								)}
 								<div className="item-btn col-lg-4 my-1">
 									<button className="btn" onClick={handleLogOut}>
 										Cerrar Sesión
