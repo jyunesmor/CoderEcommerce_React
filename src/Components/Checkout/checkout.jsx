@@ -20,6 +20,7 @@ function checkout() {
 	const [pedidoId, setPedidoId] = useState("");
 
 	const pedidoRef = collection(db, "pedidos");
+	const hoy = new Date();
 
 	const comprar = (data) => {
 		const pedido = {
@@ -27,11 +28,13 @@ function checkout() {
 			cliente: data,
 			productos: carrito,
 			total: totalQuantity,
+			fecha: `${hoy.getDate()}-${hoy.getMonth() + 1}-${hoy.getFullYear()}`,
 		};
 		addDoc(pedidoRef, pedido).then((doc) => {
 			setPedidoId(doc.id);
 			vaciarCarrito();
 		});
+		console.log(pedido);
 		getPedidosLista();
 	};
 
@@ -81,9 +84,10 @@ function checkout() {
 							<label>Ingresa tu email</label>
 							<input
 								type="email"
+								value={`${user.email}`}
 								required
 								className="input w-100"
-								{...register("email")}
+								{...register(`${user.email}`)}
 							/>
 						</div>
 						<div className="input-item p-3 m-auto w-100">

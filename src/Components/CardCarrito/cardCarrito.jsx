@@ -35,20 +35,21 @@ const CardCarrito = ({ producto }) => {
 						</figure>
 					</div>
 					<div className="card-content">
-						<div className="prod-marca is-size-5 has-text-centered">
+						<div className="nom-marca has-text-centered">
 							{producto.nombre} <br />
-							<span className="is-size-7">{producto.marca}</span>
+							<span>{producto.marca}</span>
 						</div>
-						<div className="caract-prod is-size-7">
+
+						<div className="caract-prod">
 							{producto.capacidad} <br />
-							{producto.tipo}
+							<span>{producto.tipo}</span>
 						</div>
 						<div className="precio">$ {producto.precio.toFixed(2)}</div>
 						<div className="itemCount">
 							<div className="has-text-dark" onClick={handleClickRestaCarrito}>
 								<FaMinus />
 							</div>
-							<div className="has-text-dark">{producto.count}</div>
+							<div className="has-text-dark item">{producto.count}</div>
 							<div className="has-text-dark" onClick={handleClickSumaCarrito}>
 								<FaPlus />
 							</div>

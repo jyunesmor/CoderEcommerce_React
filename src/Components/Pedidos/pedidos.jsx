@@ -4,7 +4,7 @@ function pedidos({ pedidos }) {
 			<thead>
 				<tr>
 					<th className="has-text-centered" scope="col">
-						Id Pedido
+						Fecha Pedido
 					</th>
 					<th className="has-text-centered" scope="col">
 						Nombre
@@ -22,7 +22,7 @@ function pedidos({ pedidos }) {
 					return (
 						<tr key={pedido.id}>
 							<td className="has-text-centered" scope="row">
-								{pedido.id}
+								{pedido.fecha}
 							</td>
 							<td className="has-text-centered">{pedido.cliente.nombre}</td>
 							<td className="has-text-centered">{pedido.productos.length}</td>

@@ -2,12 +2,23 @@
   display: flex;
   justify-content: center;
 
+  .title-principal {
 
-  h1 {
     text-align: center;
+
+    @include mobile {
+      font-size: 1.8rem;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
   }
 
-  h2 {
-    text-align: center;
+  .title-secundario {
+    font-size: 1.4rem;
+    text-decoration: underline;
   }
+
 }

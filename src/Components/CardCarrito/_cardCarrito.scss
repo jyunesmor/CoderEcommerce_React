@@ -40,17 +40,57 @@
 
       @include mobile600 {
         font-size: 0.85rem;
+        width: 85%;
       }
 
-      .prod-marca {
+      .nom-marca {
         width: 25%;
         text-align: center;
 
+        @include mobile {
+          font-size: 0.8rem;
+        }
+
+        span {
+          @include mobile {
+            font-size: 0.6rem;
+          }
+        }
+
+        @include notebook {
+          font-size: 1rem;
+        }
+
+        span {
+          @include mobile {
+            font-size: 0.8rem;
+          }
+        }
       }
 
       .caract-prod {
         width: 25%;
         text-align: center;
+
+        @include mobile {
+          font-size: 0.8rem;
+        }
+
+        span {
+          @include mobile {
+            font-size: 0.6rem;
+          }
+        }
+
+        @include notebook {
+          font-size: 0.9rem;
+        }
+
+        span {
+          @include mobile {
+            font-size: 0.7rem;
+          }
+        }
 
       }
 
@@ -59,7 +99,11 @@
         text-align: center;
 
         @include mobile600 {
-          font-size: 0.75rem;
+          font-size: 0.7rem;
+        }
+
+        @include notebook {
+          font-size: 1rem;
         }
       }
 
@@ -68,20 +112,27 @@
         padding: 2px;
         display: flex;
         justify-content: center;
-        gap: 30px;
+        gap: 20px;
 
         @include mobile600 {
+          width: 25%;
+          gap: 10px;
           font-size: 0.65rem;
         }
 
         .item {
           font-weight: 200;
+
+          @include mobile600 {
+            font-size: 0.7rem;
+          }
         }
       }
     }
 
     .card-footer {
       width: 35%;
+
 
       @include mobile600 {
         width: 35%;
@@ -94,7 +145,7 @@
 
         @include mobile600 {
           width: 30%;
-          padding: 10px;
+          padding: 5px;
         }
 
         .btn-detalle {
@@ -105,7 +156,11 @@
 
           @include mobile600 {
             width: 60%;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
+          }
+
+          @include notebook {
+            font-size: 1rem;
           }
         }
 
@@ -118,7 +173,7 @@
           filter: drop-shadow($btnShadow);
 
           @include mobile600 {
-            width: 15%;
+            width: 25%;
           }
         }
       }

@@ -1,0 +1,17 @@
+table {
+  thead {
+    font-size: 0.9rem;
+
+    @include mobile {
+      font-size: .7rem;
+    }
+  }
+
+  tbody {
+    font-size: 0.9rem;
+
+    @include mobile {
+      font-size: .6rem;
+    }
+  }
+}

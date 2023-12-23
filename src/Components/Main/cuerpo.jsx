@@ -16,7 +16,7 @@ const cuerpo = () => {
 		<div className="section body">
 			<div className="container d-flex flex-column">
 				<div className="m-auto">
-					<h1 className="title is-size-1">
+					<h1 className="title-principal">
 						Bienvenidos al Carrito {user.email}
 					</h1>
 				</div>
@@ -26,7 +26,9 @@ const cuerpo = () => {
 					</div>
 				) : (
 					<div>
-						<div className="title has-text-centered mt-6">Mis Pedidos</div>
+						<div className="title-secundario has-text-centered mt-6">
+							Mis Pedidos
+						</div>
 						<Pedidos pedidos={pedidosFiltered} />
 					</div>
 				)}

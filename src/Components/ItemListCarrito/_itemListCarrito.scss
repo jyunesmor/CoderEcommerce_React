@@ -14,9 +14,25 @@
       margin: auto;
       padding: 40px;
       width: 60%;
-      font-size: 1.2rem !important;
+      font-size: 1.3rem;
       font-family: cursive;
       text-align: center;
+
+      @include notebook {
+        width: 75%;
+        font-size: 1.2rem;
+      }
+
+      @include mobile600 {
+        width: 80%;
+        font-size: 1.1rem;
+      }
+
+      @include mobile {
+        width: 95%;
+        font-size: 1rem;
+      }
+
     }
 
     .items-btn {

@@ -19,7 +19,7 @@ const itemListCarrito = ({ productos }) => {
 						{product}
 					</div>
 					<div className="footer-list">
-						<div className="title is-size-4">
+						<div className="title">
 							El total de la Compra es de $ {totalQuantity.toFixed(2)}
 						</div>
 						<div className="items-btn">
