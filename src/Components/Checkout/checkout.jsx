@@ -62,41 +62,49 @@ function checkout() {
 				<div className="m-auto">
 					<div className="tit-check has-text-centered">Datos del pedido</div>
 					<div className="inputs-group m-auto d-flex flex-column">
-						<div className="input-item p-3 m-auto w-100">
+						<div className="input-item p-3 m-auto">
 							<label>Ingresa tu nombre completo</label>
 							<input
 								type="text"
 								required
-								className="input w-100"
+								placeholder="Nombre y Apellido Completo"
+								className="input"
 								{...register("nombre")}
 							/>
 						</div>
-						<div className="input-item p-3 m-auto w-100">
+						<div className="input-item p-3 m-auto">
 							<label>Ingresa tu nombre DNI</label>
 							<input
-								type="number"
+								type="text"
+								pattern="[0-9]{8}"
+								title="Ingrese un número de 8 Digitos ej.: 12345678"
 								required
-								className="input w-100"
+								placeholder="Ingrese su Documento"
+								className="input"
 								{...register("dni")}
 							/>
 						</div>
-						<div className="input-item p-3 m-auto w-100">
+						<div className="input-item p-3 m-auto">
 							<label>Ingresa tu email</label>
 							<input
 								type="email"
 								value={`${user.email}`}
+								placeholder="super@gmail.com"
 								required
-								className="input w-100"
+								className="input"
 								{...register(`${user.email}`)}
 							/>
 						</div>
-						<div className="input-item p-3 m-auto w-100">
+						<div className="input-item p-3 m-auto">
 							<label>Ingresa tu número de Telefono</label>
 							<input
-								type="text"
+								type="tel"
+								pattern="[0-9]{3}-[0-9]{7}"
+								title="Ingrese el número Codigo de area de 3 digitos y los siguientes sin 15 ej.: 123-1234567"
+								placeholder="Código de área-Número"
 								required
 								{...register("telefono")}
-								className="input w-100"
+								className="input"
 							/>
 						</div>
 					</div>
