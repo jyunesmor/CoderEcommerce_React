@@ -21,10 +21,13 @@ function login() {
 
 	return (
 		<div className="container-log">
+			<div className="title-log">
+				<h2>Inicio de Sesión</h2>
+			</div>
 			<form className="formulario">
 				<div className="mb-3">
 					<label className="form-label" htmlFor="email">
-						Email address
+						Correo Electronico / Usuario
 					</label>
 					<input
 						type="email"
@@ -35,7 +38,7 @@ function login() {
 				</div>
 				<div className="mb-3">
 					<label className="form-label" htmlFor="password">
-						Password
+						Contraseña
 					</label>
 					<input
 						type="password"
@@ -51,9 +54,12 @@ function login() {
 				>
 					Ingresar
 				</button>
-				<Link to={"/register"} type="submit" className="btn btn-primary">
-					Registrate
-				</Link>
+				<p
+					className="has-text-centered
+				"
+				>
+					No tengo usuario <Link to="/register">Registrate aqui</Link>
+				</p>
 			</form>
 		</div>
 	);

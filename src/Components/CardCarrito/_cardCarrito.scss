@@ -1,7 +1,6 @@
 .container-carrito {
   width: 100%;
   row-gap: 10px;
-  font-size: 12px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -32,14 +31,13 @@
 
     .card-content {
       margin: auto;
-      width: 55%;
+      width: 70%;
       padding: 0;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
 
       @include mobile600 {
-        font-size: 0.85rem;
         width: 85%;
       }
 
@@ -47,23 +45,30 @@
         width: 25%;
         text-align: center;
 
-        @include mobile {
-          font-size: 0.8rem;
-        }
-
-        span {
-          @include mobile {
-            font-size: 0.6rem;
-          }
+        @include tablets {
+          font-size: 1.1rem;
         }
 
         @include notebook {
-          font-size: 1rem;
+          font-size: 1.3rem;
+        }
+
+        @include desktop {
+          font-size: 1.4rem;
         }
 
         span {
-          @include mobile {
-            font-size: 0.8rem;
+
+          @include tablets {
+            font-size: .9rem;
+          }
+
+          @include notebook {
+            font-size: 1.2rem;
+          }
+
+          @include desktop {
+            font-size: 1.1rem;
           }
         }
       }
@@ -72,23 +77,33 @@
         width: 25%;
         text-align: center;
 
-        @include mobile {
-          font-size: 0.8rem;
-        }
 
-        span {
-          @include mobile {
-            font-size: 0.6rem;
-          }
+
+        @include tablets {
+          font-size: 1rem;
         }
 
         @include notebook {
-          font-size: 0.9rem;
+          font-size: 1.1rem;
+        }
+
+        @include desktop {
+          font-size: 1.2rem;
         }
 
         span {
-          @include mobile {
-            font-size: 0.7rem;
+
+
+          @include tablets {
+            font-size: 0.8rem;
+          }
+
+          @include notebook {
+            font-size: 1rem;
+          }
+
+          @include desktop {
+            font-size: .9rem;
           }
         }
 
@@ -98,12 +113,18 @@
         width: 25%;
         text-align: center;
 
-        @include mobile600 {
-          font-size: 0.7rem;
+
+
+        @include tablets {
+          font-size: 1rem;
         }
 
         @include notebook {
           font-size: 1rem;
+        }
+
+        @include desktop {
+          font-size: 1.2rem;
         }
       }
 
@@ -117,7 +138,6 @@
         @include mobile600 {
           width: 25%;
           gap: 10px;
-          font-size: 0.65rem;
         }
 
         .item {
@@ -126,13 +146,16 @@
           @include mobile600 {
             font-size: 0.7rem;
           }
+
+          @include desktop {
+            font-size: 1.1rem;
+          }
         }
       }
     }
 
     .card-footer {
       width: 35%;
-
 
       @include mobile600 {
         width: 35%;
@@ -149,18 +172,22 @@
         }
 
         .btn-detalle {
-          width: 50%;
+          width: 60%;
           color: black;
           font-weight: 700;
           text-align: center;
 
-          @include mobile600 {
-            width: 60%;
+
+          @include tablets {
             font-size: 0.7rem;
           }
 
           @include notebook {
             font-size: 1rem;
+          }
+
+          @include desktop {
+            font-size: 1.2rem;
           }
         }
 

@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../../assets/Context/AuthContext/authProvider";
 import { auth, googleProvider } from "../../config/firebase";
 
@@ -23,10 +23,13 @@ function register() {
 
 	return (
 		<div className="container-log">
+			<div className="title-log">
+				<h2>Registro de Usuario</h2>
+			</div>
 			<form className="formulario">
 				<div className="mb-3">
 					<label className="form-label" htmlFor="email">
-						Email address
+						Correo Electronico / Usuario
 					</label>
 					<input
 						type="email"
@@ -37,7 +40,7 @@ function register() {
 				</div>
 				<div className="mb-3">
 					<label className="form-label" htmlFor="password">
-						Password
+						Contraseña
 					</label>
 					<input
 						type="password"
@@ -54,6 +57,12 @@ function register() {
 				>
 					Registrar
 				</button>
+				<p
+					className="has-text-centered
+				"
+				>
+					Tengo usuario <Link to="/">Iniciar Sesión</Link>
+				</p>
 			</form>
 		</div>
 	);

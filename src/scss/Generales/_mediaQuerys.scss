@@ -1,7 +1,7 @@
-/*! Media_Query 1200px */
+/*! Media_Query 1500px */
 
 @mixin desktop {
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1500px) {
     @content;
   }
 }

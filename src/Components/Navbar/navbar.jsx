@@ -23,13 +23,27 @@ const navbar = () => {
 				<div className="cont-nav">
 					<div className="container-logo">
 						<div className="container-ti">
-							<h1 className="title is-3">SuperCercaTuyo</h1>
+							<h1 className="tit-logo">
+								{user ? (
+									<Link to="/cuerpo" className="btn">
+										<span>Super</span>
+										<span className="span-1">Cerca</span>
+										<span className="span-2">Tuyo</span>
+									</Link>
+								) : (
+									<Link to="/" className="btn">
+										<span>Super</span>
+										<span className="span-1">Cerca</span>
+										<span className="span-2">Tuyo</span>
+									</Link>
+								)}
+							</h1>
 						</div>
 					</div>
 					<div className="container-info-nav p-1">
 						<div className="container-principal">
 							<div>
-								<h3 className="subtitle is-4 h-100 p-1">Sucursal Córdoba</h3>
+								<h3 className="subtit h-100 p-1">Sucursal Córdoba</h3>
 							</div>
 							<div>
 								<CartWidget />
@@ -39,17 +53,6 @@ const navbar = () => {
 							<div className="row">
 								{user && (
 									<>
-										<div className="item-btn col-lg-4 my-1">
-											{user ? (
-												<Link to="/cuerpo" className="btn">
-													Home
-												</Link>
-											) : (
-												<Link to="/" className="btn">
-													Home
-												</Link>
-											)}
-										</div>
 										<div className="item-btn col-lg-4 my-1">
 											<Link to="/productos" className="btn">
 												Productos
@@ -63,9 +66,11 @@ const navbar = () => {
 									</>
 								)}
 								<div className="item-btn col-lg-4 my-1">
-									<button className="btn" onClick={handleLogOut}>
-										Cerrar Sesión
-									</button>
+									{user && (
+										<button className="btn" onClick={handleLogOut}>
+											Cerrar Sesión
+										</button>
+									)}
 								</div>
 							</div>
 						</div>
